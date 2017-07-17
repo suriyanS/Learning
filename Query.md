@@ -5,7 +5,7 @@
 
         select name,team,email,doj,salary from employee ;
 ### Screen Shot:
-![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/1.List%20All%20employees.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/new%20emp%20list.png "Logo Title Text 1")
 
 
 ## 2.List of employees in team/project :

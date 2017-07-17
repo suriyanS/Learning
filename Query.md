@@ -19,9 +19,9 @@
 
 ### Query:
         
-        select name,team,email,doj,salary from employee where MONTHNAME(doj) ="July" ;
+        select name,team,email,doj,salary,month from employee where month ="July" ;
 ### Screen Shot:
-![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/3.List%20of%20employees%20joined%20in%20specific%20month.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/3.List%20of%20employees%20joined%20in%20specific%20monthh.png "Logo Title Text 1")
 ## 4.Top 5 employees get highest salary  :
 
 ### Query:

@@ -17,6 +17,9 @@
 
 ### Screen Shot:
 ![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/2.List%20of%20employees%20in%20teamm.png "Logo Title Text 1")
+
+Note: Here 0101 is Employee Id and 301 is Project Id.I have used id & name(Names Only) commonly in all tables so i have mentioned object with column name (Ex: "e.id" e is object of employee and id is column in employee).
+
 ## 3.List of employees joined in specific month  :
 
 ### Query:

@@ -12,9 +12,11 @@
 
 ### Query:
 
-        select name,team,email,doj,salary from employee where team="DBL";
+    select e.id,e.name,p.id,p.name,doj,email,salary,e.team,p.teamid from projectemployee pe,employee e,project p  where pe.
+    employeeid=e.id AND pe.projectid=p.id AND e.team="DBL";
+
 ### Screen Shot:
-![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/2.List%20of%20employees%20in%20team.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/2.List%20of%20employees%20in%20teamm.png "Logo Title Text 1")
 ## 3.List of employees joined in specific month  :
 
 ### Query:

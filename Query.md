@@ -32,7 +32,7 @@ Note: Here 0101 is Employee Id and 301 is Project Id.I have used id & name(Names
         
         select name,team,email,doj,salary from employee order by salary desc limit 5;
 ### Screen Shot:
-![alt text](hhttps://raw.githubusercontent.com/suriyanS/Learning/master/4.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/suriyanS/Learning/master/4.png "Logo Title Text 1")
 ## 5.Range wise Salary List:
 
 ### Query:

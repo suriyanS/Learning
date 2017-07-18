@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+	<mirrors>
+		<mirror>
+			<!--This sends everything else to /public -->
+			<id>nexus</id>
+			<mirrorOf>*</mirrorOf>
+			<!--<url>http://10.100.4.190:8081/nexus/content/groups/public</url> -->
+			<url>http://nexus.kgfsl.com:8081/nexus/repository/maven-public/</url>
+		</mirror>
+	</mirrors>
+	<profiles>
+		<profile>
+			<id>nexus</id>
+			<!--Enable snapshots for the built in central repo to direct -->
+			<!--all requests to nexus via the mirror -->
+			<repositories>
+				<repository>
+					<id>central</id>
+					<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>central</id>
+					<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<!--make the profile active all the time -->
+		<activeProfile>nexus</activeProfile>
+	</activeProfiles>
+	<servers>
+		<server>
+			<id>maven.oracle.com </id>
+			<username>saravanan.seenivasan@kgfsl.com</username>
+			<password>Tech@123{lyYkYX1AJp8HWybhPY7PtGcyN2Y9mXWELZauVQkFiSs=}</password>
+			<configuration>
+				<basicAuthScope>
+					<host>ANY </host>
+					<port>ANY </port>
+					<realm>OAM 11g </realm>
+				</basicAuthScope>
+				<httpConfiguration>
+					<all>
+						<params>
+							<property>
+								<name>http.protocol.allow-circular-redirects </name>
+								<value>%b,true </value>
+							</property>
+						</params>
+					</all>
+				</httpConfiguration>
+			</configuration>
+		</server>
+	</servers>
+</settings>
